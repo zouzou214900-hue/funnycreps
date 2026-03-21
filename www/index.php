@@ -34,6 +34,25 @@ $canonicalUrl = $baseUrl . '/' . ($mode === 'home' ? '' : $mode . '.html');
 
     <!-- Google fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700">
+
+    <!-- JSON-LD Organisation -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Funny Crèche",
+      "url": "https://www.funny-creche.fr",
+      "logo": "https://www.funny-creche.fr/img/logo.png",
+      "description": "Réseau de micro-crèches privées bienveillantes en France. 12 structures en Côte-d'Or, Saône-et-Loire, Seine-Saint-Denis et Landes.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=100072368342434"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "French",
+        "url": "https://www.funny-creche.fr/contact.html"
+      }
+    }
+    </script>
 </head>
 <body>
 <div class="page_loader"></div>

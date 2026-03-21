@@ -109,6 +109,23 @@ if ($_POST) {
         $errors[] = "Requête invalide. Veuillez recharger la page et réessayer.";
     }
 
+    // Validation des champs obligatoires (côté serveur)
+    if (empty(trim(isset($_POST['nom_prenom']) ? $_POST['nom_prenom'] : ''))) {
+        $errors[] = "Votre nom et prénom sont requis.";
+    }
+    if (empty(trim(isset($_POST['email']) ? $_POST['email'] : ''))) {
+        $errors[] = "Votre adresse email est requise.";
+    }
+    if (empty(trim(isset($_POST['message']) ? $_POST['message'] : ''))) {
+        $errors[] = "Votre message est requis.";
+    }
+    if (!empty($_POST['nom_prenom']) && mb_strlen($_POST['nom_prenom']) > 100) {
+        $errors[] = "Votre nom ne doit pas dépasser 100 caractères.";
+    }
+    if (!empty($_POST['message']) && mb_strlen($_POST['message']) > 3000) {
+        $errors[] = "Votre message est trop long (3000 caractères maximum).";
+    }
+
     if (!isset($_POST['security_question']) || $_POST['security_question'] != 4) {
         $errors[] = "La reponse a la question de securite est incorrecte. Veuillez reessayer.";
     }
@@ -191,7 +208,7 @@ if ($_POST) {
                 <span aria-hidden='true'>&times;</span>
             </button>
         </div>";
-    } else {
+    } elseif (count($errors) === 0) {
         $messageSuccessOrError = "<div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'>
             <strong style='color:#000'>Une erreur est survenue lors de l'envoi du mail.</strong>
             <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
@@ -255,7 +272,7 @@ if ($_POST) {
                                             <div class="form-group number">
                                                 <select name="structure" required class="form-control">
                                                     <?php
-                                                        $centres = [
+                                                        $centresLabels = [
                                                             "eiffel"              => "DIJON - Eiffel",
                                                             "dijon-cazotte"       => "DIJON - Cazotte",
                                                             "plombieres"          => "PLOMBIERES-LES-DIJON",
@@ -270,16 +287,15 @@ if ($_POST) {
                                                             "nuits-saint-georges" => "Nuits-Saint-Georges",
                                                             "daix"                => "DAIX (ouverture septembre 2026)"
                                                         ];
+                                                        $emailCentres = getCentres();
+                                                        $preselect = array_key_exists('s', $_GET) ? $_GET['s'] : '';
                                                     ?>
                                                     <option value="">--Selectionnez une structure d'accueil--</option>
                                                     <optgroup label="Structures existantes">
                                                         <?php
-                                                            foreach($centres as $key => $centre) {
-                                                                echo '<option value="' . $key . '" ';
-                                                                if(array_key_exists('s', $_GET) && $_GET['s'] == $key) {
-                                                                    echo 'selected';
-                                                                }
-                                                                echo '>' . $centre . '</option>';
+                                                            foreach($centresLabels as $key => $centre) {
+                                                                $selected = ($preselect !== '' && isset($emailCentres[$key]) && $emailCentres[$key] === $preselect) ? ' selected' : '';
+                                                                echo '<option value="' . htmlspecialchars($key, ENT_QUOTES, 'UTF-8') . '"' . $selected . '>' . htmlspecialchars($centre, ENT_QUOTES, 'UTF-8') . '</option>';
                                                             }
                                                         ?>
                                                     </optgroup>

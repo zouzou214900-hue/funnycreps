@@ -6,7 +6,39 @@
 $c = $crecheData;
 $email      = htmlspecialchars($c['email'], ENT_QUOTES, 'UTF-8');
 $mapKey     = htmlspecialchars($googleMapsKey, ENT_QUOTES, 'UTF-8');
+
+// JSON-LD LocalBusiness / ChildCare pour le SEO
+$addrParts = array('@type' => 'PostalAddress', 'streetAddress' => $c['address'], 'addressCountry' => 'FR');
+if (preg_match('/^(.*),\s*(\d{5})\s+(.+)$/', $c['address'], $addrMatch)) {
+    $addrParts = array(
+        '@type'           => 'PostalAddress',
+        'streetAddress'   => trim($addrMatch[1]),
+        'postalCode'      => $addrMatch[2],
+        'addressLocality' => trim($addrMatch[3]),
+        'addressCountry'  => 'FR'
+    );
+}
+$ldJson = array(
+    '@context'      => 'https://schema.org',
+    '@type'         => 'ChildCare',
+    'name'          => 'Funny Crèche - ' . $c['map_name'],
+    'url'           => 'https://www.funny-creche.fr/' . $mode . '.html',
+    'telephone'     => $c['phone_display'],
+    'email'         => $c['email'],
+    'address'       => $addrParts,
+    'geo'           => array(
+        '@type'     => 'GeoCoordinates',
+        'latitude'  => $c['map_lat'],
+        'longitude' => $c['map_lng']
+    ),
+    'image'         => 'https://www.funny-creche.fr/' . $c['banner_image'],
+    'openingHours'  => 'Mo-Fr 07:30-18:30',
+    'priceRange'    => 'EUR'
+);
 ?>
+<script type="application/ld+json">
+<?php echo json_encode($ldJson, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT); ?>
+</script>
 
 <!-- Banner start -->
 <div class="banner banner-creche" id="banner">
