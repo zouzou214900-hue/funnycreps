@@ -1,0 +1,46 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^funny-creche\.fr [NC]
+RewriteRule ^(.*)$ https://www.funny-creche.fr/$1 [L,R=301]
+
+RewriteRule ^creches\.html$ index.php?mode=creches [QSA,L]
+RewriteRule ^contact\.html$ index.php?mode=contact [QSA,L]
+RewriteRule ^contact\.php$ /contact.html [R=301,L]
+RewriteRule ^projet-pedagogique\.html$ index.php?mode=projet-pedagogique [QSA,L]
+RewriteRule ^projet-pedagogique\.php$ /projet-pedagogique.html [R=301,L]
+RewriteRule ^qu-est-ce-qu-une-micro-creche\.html$ index.php?mode=projet-pedagogique&anchor=micro-creche [QSA,L]
+RewriteRule ^tarifs\.html$ index.php?mode=projet-pedagogique&anchor=tarifs [QSA,L]
+RewriteRule ^creche-dijon\.html$ index.php?mode=creche-dijon [QSA,L]
+RewriteRule ^creche-dijon\.php$ /creche-dijon.html [R=301,L]
+RewriteRule ^creche-dijon-cazotte\.html$ index.php?mode=creche-dijon-cazotte [QSA,L]
+RewriteRule ^creche-dijon-cazotte\.php$ /creche-dijon-cazotte.html [R=301,L]
+RewriteRule ^creche-demigny\.html$ index.php?mode=creche-demigny [QSA,L]
+RewriteRule ^creche-saint-loup\.html$ index.php?mode=creche-saint-loup [QSA,L]
+RewriteRule ^creche-demigny\.php$ /creche-demigny.html [R=301,L]
+RewriteRule ^creche-neuilly-sur-marne\.php$ /creche-neuilly-sur-marne.html [R=301,L]
+RewriteRule ^creche-neuilly-sur-marne\.html$ index.php?mode=creche-neuilly-sur-marne [QSA,L]
+RewriteRule ^creche-noisy-le-grand\.php$ /creche-noisy-le-grand.html [R=301,L]
+RewriteRule ^creche-noisy-le-grand\.html$ index.php?mode=creche-noisy-le-grand [QSA,L]
+RewriteRule ^creche-beaune-tonneliers\.php$ /creche-beaune-tonneliers.html [R=301,L]
+RewriteRule ^creche-beaune-tonneliers\.html$ index.php?mode=creche-beaune-tonneliers [QSA,L]
+RewriteRule ^creche-beaune-verdun\.php$ /creche-beaune-verdun.html [R=301,L]
+RewriteRule ^creche-beaune-verdun\.html$ index.php?mode=creche-beaune-verdun [QSA,L]
+RewriteRule ^creche-plombiere\.php$ /creche-plombiere.html [R=301,L]
+RewriteRule ^creche-plombiere\.html$ index.php?mode=creche-plombiere [QSA,L]
+RewriteRule ^creche-mont\.php$ /creche-mont.html [R=301,L]
+RewriteRule ^creche-mont\.html$ index.php?mode=creche-mont [QSA,L]
+RewriteRule ^ouvertures-prochaines\.html$ index.php?mode=ouvertures-prochaines [QSA,L]
+RewriteRule ^creche-recrute$ /recrutement.html [R=301,L]
+RewriteRule ^recrutement\.html$ index.php?mode=recrutement [QSA,L]
+RewriteRule ^creche-varois\.php$ /creche-varois.html [R=301,L]
+RewriteRule ^creche-varois\.html$ index.php?mode=creche-varois [QSA,L]
+RewriteRule ^creche-nuits\.php$ /creche-nuits/html [R=301,L]
+RewriteRule ^creche-nuits\.html$ index.php?mode=creche-nuits [QSA,L]
+RewriteRule ^mentions-legales\.html$ index.php?mode=mentions-legales [QSA,L]
+
+
+#RewriteRule ^(.*)\.html$ index.php?mode=$1 [QSA,L]
+
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>

@@ -1,0 +1,7 @@
+.env
+.DS_Store
+.bash_profile
+.bashrc
+.bash_logout
+.claude/
+www/nbproject/
