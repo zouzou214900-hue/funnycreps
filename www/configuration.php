@@ -15,7 +15,7 @@ if (file_exists($envFile)) {
     }
 }
 
-$googleMapsKey = isset($_ENV['GOOGLE_MAPS_KEY']) ? $_ENV['GOOGLE_MAPS_KEY'] : '';
+$googleMapsKey = isset($_ENV['GOOGLE_MAPS_KEY']) ? $_ENV['GOOGLE_MAPS_KEY'] : 'AIzaSyDjj8go02iQwWjo6Q-DlMgb3YsP0DNWFV4';
 
 // Génération du token CSRF
 if (empty($_SESSION['csrf_token'])) {

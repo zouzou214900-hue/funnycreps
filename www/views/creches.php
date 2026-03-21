@@ -4,7 +4,7 @@
     <div id="bannerCarousole" >
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="img/home2.jpg" alt="banner">
+                <img class="d-block w-100 h-100" src="img/home2.jpg" alt="Nos 12 micro-crèches Funny Crèche en France">
                 <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                     <div class="carousel-content container">
                         <div class="text-center">

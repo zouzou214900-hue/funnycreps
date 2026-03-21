@@ -79,7 +79,7 @@
     <div id="bannerCarousole" >
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="img/plombieres-1.jpg" alt="banner">
+                <img class="d-block w-100 h-100" src="img/plombieres-1.jpg" alt="Prochaines ouvertures de crèches Funny Crèche">
                 <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                     <div class="carousel-content container">
                         <div class="text-center">

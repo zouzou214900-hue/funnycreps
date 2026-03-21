@@ -206,7 +206,7 @@ if ($_POST) {
     <div id="bannerCarousole">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
-                <img class="d-block w-100 h-100" src="img/bebe-phone2.jpg" alt="banner">
+                <img class="d-block w-100 h-100" src="img/bebe-phone2.jpg" alt="Contactez Funny Crèche pour inscrire votre enfant">
                 <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                     <div class="carousel-content container">
                         <div class="text-center">
