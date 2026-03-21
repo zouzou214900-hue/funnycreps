@@ -1,0 +1,21 @@
+name: Déploiement sur OVH
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déploiement via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ssh.cluster026.hosting.ovh.net
+          username: funnycreps
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            cd /home/funnycreps/www
+            git pull origin main
