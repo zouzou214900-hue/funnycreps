@@ -9,13 +9,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Déploiement via SSH
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Déployer via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ssh.cluster026.hosting.ovh.net
+          server: ftp.cluster026.hosting.ovh.net
           username: funnycreps
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          script: |
-            cd /home/funnycreps/www
-            git pull origin main
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./www/
+          server-dir: /www/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/nbproject/**
