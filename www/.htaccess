@@ -44,9 +44,3 @@ RewriteRule ^mentions-legales\.html$ index.php?mode=mentions-legales [QSA,L]
     Order allow,deny
     Deny from all
 </Files>
-
-# Bloquer l'accès au dossier de configuration IDE
-<DirectoryMatch "nbproject">
-    Order allow,deny
-    Deny from all
-</DirectoryMatch>
