@@ -3,7 +3,7 @@ ini_set('display_errors', 0);
 error_reporting(0);
 require('configuration.php');
 
-$baseUrl     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'www.funny-creche.fr');
+$baseUrl     = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . (isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'www.funny-creche.fr');
 $ogImageUrl  = $baseUrl . '/' . $ogImage;
 $canonicalUrl = $baseUrl . '/' . ($mode === 'home' ? '' : $mode . '.html');
 ?>

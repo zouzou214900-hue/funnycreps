@@ -62,8 +62,8 @@ function sendEmailToStructure($data) {
         $mail->SMTPAuth = true;
 
         // Les variables d'environnement sont chargées par configuration.php
-        $mail->Username = $_ENV['SMTP_USER'] ?? '';
-        $mail->Password = $_ENV['SMTP_PASS'] ?? '';
+        $mail->Username = isset($_ENV['SMTP_USER']) ? $_ENV['SMTP_USER'] : '';
+        $mail->Password = isset($_ENV['SMTP_PASS']) ? $_ENV['SMTP_PASS'] : '';
 
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
