@@ -91,4 +91,8 @@ switch ($mode_input) {
         $metaDescription = $crecheData['meta_description'];
         $ogImage    = $crecheData['banner_image'];
     break;
+    default:
+        $mode  = 'home';
+        $title = 'Page d\'accueil';
+    break;
 }
