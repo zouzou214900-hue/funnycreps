@@ -61,7 +61,7 @@
                 <div class="col-md-12">
                     <div class="main-timeline2">
                         <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/summer.png"></span>
+                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/summer.png" alt="Icône soleil - arrivée à la crèche"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> 8h à 9h30 : Arrivée à la crèche</h3>
                                 <p class="description">
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                         <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/E386D7/vegetarian-food.png"></span>
+                            <span class="icon"><img src="https://img.icons8.com/dotty/50/E386D7/vegetarian-food.png" alt="Icône nourriture - goûter du matin"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title">9h30 à 10h : Un verre d’eau, de jus de fruits frais </h3>
 								<p class="description">
@@ -83,7 +83,7 @@
 
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/puzzle.png"></span>
+                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/puzzle.png" alt="Icône puzzle - activités du matin"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> Activités du matin</h3>
                                 <p class="description">
@@ -94,7 +94,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/chef-hat.png'></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/chef-hat.png' alt="Icône toque - déjeuner"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> 11h00 : Le déjeuner</h3>
                                 <p class="description">
@@ -102,7 +102,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/3ebae7/sleeping-in-bed.png'></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/3ebae7/sleeping-in-bed.png' alt="Icône lit - sieste"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> La sieste</h3>
                                 <p class="description">
@@ -112,7 +112,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/lego-head.png'></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/lego-head.png' alt="Icône jouet - activités de l'après-midi"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> Les activités de l'après-midi</h3>
                                 <p class="description">
@@ -121,7 +121,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/3ebae7/cupcake.png'></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/3ebae7/cupcake.png' alt="Icône gâteau - heure du goûter"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title">15h30 : L'heure du goûter</h3>
                                 <p class="description">
@@ -130,7 +130,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/bright-moon.png'></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/bright-moon.png' alt="Icône lune - départ de la crèche"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title">Le départ</h3>
                                 <p class="description">

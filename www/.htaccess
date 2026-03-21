@@ -33,7 +33,7 @@ RewriteRule ^creche-recrute$ /recrutement.html [R=301,L]
 RewriteRule ^recrutement\.html$ index.php?mode=recrutement [QSA,L]
 RewriteRule ^creche-varois\.php$ /creche-varois.html [R=301,L]
 RewriteRule ^creche-varois\.html$ index.php?mode=creche-varois [QSA,L]
-RewriteRule ^creche-nuits\.php$ /creche-nuits/html [R=301,L]
+RewriteRule ^creche-nuits\.php$ /creche-nuits.html [R=301,L]
 RewriteRule ^creche-nuits\.html$ index.php?mode=creche-nuits [QSA,L]
 RewriteRule ^mentions-legales\.html$ index.php?mode=mentions-legales [QSA,L]
 
@@ -44,3 +44,9 @@ RewriteRule ^mentions-legales\.html$ index.php?mode=mentions-legales [QSA,L]
     Order allow,deny
     Deny from all
 </Files>
+
+# Bloquer l'accès au dossier de configuration IDE
+<DirectoryMatch "nbproject">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>

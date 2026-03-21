@@ -33,7 +33,7 @@ function sendEmailToStructure($data) {
     $structure = $data['structure'];
     $to = $centres[$structure];
 
-    $imageFilePath = '/home/funnycreps/www/img/logo.png';
+    $imageFilePath = dirname(__DIR__) . '/img/logo.png';
 
     $message = '<div style="font-family: Arial, sans-serif; color: #333;">';
     $message .= '<div style="text-align: center; margin-bottom: 20px;">';
@@ -61,15 +61,7 @@ function sendEmailToStructure($data) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $envFile = dirname(dirname(__DIR__)) . '/.env';
-        if (file_exists($envFile)) {
-            foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-                if (strpos($line, '=') !== false && strpos($line, '#') !== 0) {
-                    [$key, $value] = explode('=', $line, 2);
-                    $_ENV[trim($key)] = trim($value);
-                }
-            }
-        }
+        // Les variables d'environnement sont chargées par configuration.php
         $mail->Username = $_ENV['SMTP_USER'] ?? '';
         $mail->Password = $_ENV['SMTP_PASS'] ?? '';
 
@@ -108,9 +100,14 @@ function sendEmailToStructure($data) {
     }
 }
 
-if($_POST) {
+if ($_POST) {
 
     $centres = getCentres();
+
+    // Vérification du token CSRF
+    if (empty($_POST['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+        $errors[] = "Requête invalide. Veuillez recharger la page et réessayer.";
+    }
 
     if (!isset($_POST['security_question']) || $_POST['security_question'] != 4) {
         $errors[] = "La reponse a la question de securite est incorrecte. Veuillez reessayer.";
@@ -225,6 +222,7 @@ if($_POST) {
                             <p><sup>* Selon la structure d'accueil</sup></p>
                         </div>
                         <form action="contact.html" method="POST">
+                            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8'); ?>">
                             <?php echo $messageSuccessOrError; ?>
                             <?php if (count($errors) > 0) : ?>
                                 <div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'>
