@@ -9,17 +9,17 @@ $envFile = dirname(__DIR__) . '/.env';
 if (file_exists($envFile)) {
     foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
         if (strpos($line, '=') !== false && strpos($line, '#') !== 0) {
-            [$key, $value] = explode('=', $line, 2);
-            $_ENV[trim($key)] = trim($value);
+            $parts = explode('=', $line, 2);
+            $_ENV[trim($parts[0])] = trim($parts[1]);
         }
     }
 }
 
-$googleMapsKey = $_ENV['GOOGLE_MAPS_KEY'] ?? '';
+$googleMapsKey = isset($_ENV['GOOGLE_MAPS_KEY']) ? $_ENV['GOOGLE_MAPS_KEY'] : '';
 
 // Génération du token CSRF
 if (empty($_SESSION['csrf_token'])) {
-    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    $_SESSION['csrf_token'] = bin2hex(openssl_random_pseudo_bytes(32));
 }
 
 // Valeurs meta par défaut
@@ -30,7 +30,7 @@ $ogImage         = 'img/logo.png';
 require __DIR__ . '/views/data/creches.php';
 $crecheData = null;
 
-$mode_input = $_GET['mode'] ?? '';
+$mode_input = isset($_GET['mode']) ? $_GET['mode'] : '';
 
 switch ($mode_input) {
     case '':
