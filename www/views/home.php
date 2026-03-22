@@ -274,7 +274,7 @@
                     <i class="lnr lnr-map-marker"></i>
                     <h1 class="counter">12</h1>
                     <p>structures sur la france<br/>
-                       <i class="counter-note">suivez nos futures ouvertures sur Facebook</i></p>
+                       <small class="counter-note">suivez nos futures ouvertures sur Facebook</small></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
