@@ -34,7 +34,7 @@
     <li class="event" data-date="">
       <h3>Funny Crèche DAIX</h3>
       <p>Ouverture prévue en Septembre 2026</p>
-      <a href="contact.html" class="btn btn-xs btn-theme">Contactez-nous</a>
+      <a href="contact.html?s=n.michaud@funny-creche.fr" class="btn btn-xs btn-theme">Contactez-nous</a>
     </li>
   </ul>
 </div>

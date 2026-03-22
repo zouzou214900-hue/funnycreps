@@ -6948,11 +6948,35 @@ footer {
 /* Lien rose (utilisé dans creches.php et recrutement.php) */
 .link-pink { color: #e386d7; }
 
+/* Texte rose — classe sémantique pour h3/b rose (creche-template) */
+.colorpink { color: #e386d7; }
+
+/* Bouton outline rose (creches.php, contact.php) */
+.btn-lg-outline {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 18px;
+    border: 2px solid #e386d7;
+    border-radius: 4px;
+    background: transparent;
+    color: #e386d7;
+    transition: background 0.25s, color 0.25s;
+}
+.btn-lg-outline:hover,
+.btn-lg-outline:focus {
+    background: #e386d7;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Petit bouton (ouvertures-prochaines) */
+.btn-xs { padding: 4px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+
 /* Texte description dans les blocs catégories (home.php) */
 .category-desc { color: #FFF; text-align: left; }
 
 /* Bouton navbar recrutement */
-.navbar-btn-top { margin-top: 22px; }
+.navbar-nav li .navbar-btn-top { margin-top: 22px; }
 
 /* Footer social */
 .footer-social { color: #FFF; }
@@ -6966,7 +6990,7 @@ footer {
     border-radius: 10px;
     border: 0;
     padding: 5px;
-    background: #f9f0f5;
+    background: pink;
 }
 
 /* Formulaire RGPD (recrutement) */
@@ -6984,8 +7008,8 @@ ul.timeline {
     border-left: 4px solid #e386d7;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
-    background: rgba(255, 255, 255, 0.03);
-    color: rgba(255, 255, 255, 0.8);
+    background: #fdf5fc;
+    color: #444;
     font-family: 'Chivo', sans-serif;
     margin: 50px auto;
     letter-spacing: 0.5px;
@@ -7000,8 +7024,8 @@ ul.timeline {
 }
 ul.timeline h1 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 100; font-size: 1.4em; }
 ul.timeline h2,
-ul.timeline h3 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 400; font-size: 1.4em; }
-ul.timeline .event { border-bottom: 1px dashed rgba(255, 255, 255, 0.1); padding-bottom: 25px; margin-bottom: 50px; position: relative; }
+ul.timeline h3 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 400; font-size: 1.4em; color: #e386d7; }
+ul.timeline .event { border-bottom: 1px dashed rgba(0, 0, 0, 0.12); padding-bottom: 25px; margin-bottom: 50px; position: relative; }
 ul.timeline .event:last-of-type { padding-bottom: 0; margin-bottom: 0; border: none; }
 ul.timeline .event:before,
 ul.timeline .event:after { position: absolute; display: block; top: 0; }

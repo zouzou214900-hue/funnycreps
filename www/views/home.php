@@ -91,7 +91,7 @@
                             </a>
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/lego-head.png' alt="Icône jouet - activités de l'après-midi"></span>
+                            <span class="icon"><img src='https://img.icons8.com/dotty/50/E386D7/teddy-bear.png' alt="Icône jouet - activités de l'après-midi"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> Les activités de l'après-midi</h3>
                                 <p class="description">

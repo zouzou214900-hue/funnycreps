@@ -220,7 +220,7 @@ if ($_POST) {
 ?>
 <!-- Banner start -->
 <div class="banner banner-contact" id="banner" style="margin-top:50px;">
-    <div id="bannerCarousole">
+    <div id="bannerCarousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
                 <img class="d-block w-100 h-100" src="img/bebe-phone2.jpg" alt="Contactez Funny Crèche pour inscrire votre enfant">
