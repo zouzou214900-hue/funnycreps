@@ -117,7 +117,7 @@
     <h2>6. Limitation de responsabilité</h2>
     <p>FUNNY BOURGOGNE s'efforce de maintenir les informations du site à jour et exactes. Toutefois, la société ne saurait être tenue responsable des erreurs, omissions ou résultats obtenus par un mauvais usage des informations présentées.</p>
 
-    <div class="ml-updated">Dernière mise à jour : mars 2026</div>
+    <div class="ml-updated">Dernière mise à jour : décembre 2025</div>
 
     <a href="/" class="ml-back-btn">← Retour à l'accueil</a>
 
