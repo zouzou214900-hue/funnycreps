@@ -15,7 +15,7 @@
 							Pensée comme un véritable cocon pour les tout-petits comme pour les plus grands, notre micro-crèche vous propose un accueil collectif régulier ou ponctuel, pour vos enfants jusqu’à leur entrée en maternelle. Notre capacité d’accueil est de 10 places.
                             </p>
                             <a href="creches.html" class="btn btn-lg btn-theme">Découvrir nos crèches</a>
-                            <a href="contact.html" class="btn btn-lg btn-white-lg-outline"><i class="fa fa-sign-in"></i> Inscrire votre enfant</a>
+                            <a href="contact.html" class="btn btn-lg btn-white-lg-outline"><i class="fa fa-sign-in" aria-hidden="true"></i> Inscrire votre enfant</a>
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-                        <i class="flaticon-clock"></i>
+                        <i class="flaticon-clock" aria-hidden="true"></i>
                     </div>
                     <h3>Nos horaires d'ouvertures<sup>*</sup></h3>
                     <p> Du lundi au vendredi 07:30 - 18:30 </p>
@@ -244,7 +244,7 @@
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-                        <i class="flaticon-mail"></i>
+                        <i class="flaticon-mail" aria-hidden="true"></i>
                     </div>
                     <h3>Nous contacter par email</h3>
                     <p><a class="btn btn-lg btn-theme" href="contact.html">Contactez-nous</a></p>
@@ -264,14 +264,14 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter-box">
-                    <i class="lnr lnr-pencil"></i>
+                    <i class="lnr lnr-pencil" aria-hidden="true"></i>
                     <h1 class="counter">400</h1>
                     <p>enfants confiés</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter-box">
-                    <i class="lnr lnr-map-marker"></i>
+                    <i class="lnr lnr-map-marker" aria-hidden="true"></i>
                     <h1 class="counter">12</h1>
                     <p>structures sur la france<br/>
                        <small class="counter-note">suivez nos futures ouvertures sur Facebook</small></p>
@@ -279,14 +279,14 @@
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter-box">
-                    <i class="lnr lnr-users"></i>
+                    <i class="lnr lnr-users" aria-hidden="true"></i>
                     <h1 class="counter">180</h1>
                     <p>familles satisfaites</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter-box">
-                    <i class="lnr lnr-thumbs-up"></i>
+                    <i class="lnr lnr-thumbs-up" aria-hidden="true"></i>
                     <h1 class="counter">55</h1>
                     <p>emplois créés</p>
                 </div>

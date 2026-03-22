@@ -6827,6 +6827,20 @@ footer {
 	text-align: justify;
 }
 
+/* Grille "micro-crèche en 3 points" (projet-pedagogique) */
+.micro-creche-points {
+	padding: 20px 0;
+	text-align: left;
+}
+.no-padding {
+	padding: 0 !important;
+}
+
+/* Texte sombre dans les alertes Bootstrap */
+.alert-dark-text {
+	color: #000;
+}
+
 @media (max-width: 580px) {
     .inline-search-area {
         max-width: 80%;
@@ -7057,7 +7071,7 @@ ul.timeline {
 }
 ul.timeline h1 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 100; font-size: 1.4em; }
 ul.timeline h2,
-ul.timeline h3 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 400; font-size: 1.4em; color: #e386d7; }
+ul.timeline h3 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 400; font-size: 1.4em; color: #9c3080; }
 ul.timeline .event { border-bottom: 1px dashed rgba(0, 0, 0, 0.12); padding-bottom: 25px; margin-bottom: 50px; position: relative; }
 ul.timeline .event:last-of-type { padding-bottom: 0; margin-bottom: 0; border: none; }
 ul.timeline .event:before,

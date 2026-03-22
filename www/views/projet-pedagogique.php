@@ -34,7 +34,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-                        <i class="fa fa-child fa-3x"></i>    
+                        <i class="fa fa-child fa-3x" aria-hidden="true"></i>    
                     </div>
                      <h3>Accompagner les enfants</h3>
                     <p>Dans leurs besoins quotidiens par le respect du rythme de chacun</p></div>
@@ -42,7 +42,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
- <i class="fa fa-anchor fa-3x"></i> 
+ <i class="fa fa-anchor fa-3x" aria-hidden="true"></i>
                     </div>
                     <h3>Participer à l’installation</h3>
                     <p>D'une bonne estime de soi<br/><br/></p>
@@ -51,7 +51,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-		 <i class="fa fa-play-circle fa-3x"></i> 
+		 <i class="fa fa-play-circle fa-3x" aria-hidden="true"></i>
                     </div>
                     <h3>Favoriser l'acquisition</h3>
                     <p>De leur autonomie progressive afin de les préparer à l’entrée à l’école</p>
@@ -60,7 +60,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-			 <i class="fa fa-building fa-3x"></i>  </div>
+			 <i class="fa fa-building fa-3x" aria-hidden="true"></i></div>
                     <h3>Favoriser l’éveil</h3>
                     <p>Des enfants par le jeu<br/><br/></p>
                 </div>
@@ -68,7 +68,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-			 <i class="fa fa-language fa-3x"></i> </div>
+			 <i class="fa fa-language fa-3x" aria-hidden="true"></i></div>
                     <h3>Proposer un éveil linguistique</h3>
                     <p>Par des ateliers d’initiation à l’anglais </p>
                 </div>
@@ -76,7 +76,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service-info">
                     <div class="icon">
-			 <i class="fa fa-lightbulb-o fa-3x"></i> </div>
+			 <i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i></div>
                     <h3>Proposition d’activités sensorielles et motrices  </h3>
                     <p>favorisant la créativité et la découverte des enfants<br/><br/></p>
                 </div>
@@ -129,7 +129,7 @@
 <div class="main-title text-center">
 		<h1>Tarification</h1>
 	</div>
-	<p style='text-align: justify'>
+	<p class="text-justify">
 	  Funny crèche applique des <strong>tarifs libres</strong>. Ne bénéficiant d'aucune subvention de fonctionnement, ses tarifs sont fixés <strong>en fonction de ses charges d'exploitation</strong>.<br>
 	  Néanmoins, ces tarifs horaires satisfont aux conditions requises par la CAF, et restent plafonnés à 10 €.
 	  <br>

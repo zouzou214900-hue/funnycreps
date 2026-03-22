@@ -203,14 +203,14 @@ if ($_POST) {
 
     if ($mailer) {
         $messageSuccessOrError = "<div class='col-md-6 offset-lg-3 alert alert-success alert-dismissible fade show' role='alert'>
-            <strong style='color:#000'>Votre demande a bien ete prise en compte.</strong><br/> Vous serez recontacte dans les meilleurs delais.
+            <strong class='alert-dark-text'>Votre demande a bien ete prise en compte.</strong><br/> Vous serez recontacte dans les meilleurs delais.
             <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
                 <span aria-hidden='true'>&times;</span>
             </button>
         </div>";
     } elseif (count($errors) === 0) {
         $messageSuccessOrError = "<div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'>
-            <strong style='color:#000'>Une erreur est survenue lors de l'envoi du mail.</strong>
+            <strong class='alert-dark-text'>Une erreur est survenue lors de l'envoi du mail.</strong>
             <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
                 <span aria-hidden='true'>&times;</span>
             </button>
@@ -314,11 +314,11 @@ if ($_POST) {
                                             </div>
                                         </div>
                                         <!-- AJOUT : Case RGPD -->
-                                        <div class="col-md-12" style="margin-bottom: 15px; text-align: left;">
+                                        <div class="col-md-12 form-rgpd">
                                             <div class="form-check">
                                                 <input type="checkbox" required name="rgpd" id="rgpd" class="form-check-input">
-                                                <label class="form-check-label" for="rgpd" style="font-size:13px; color:#FFF;">
-                                                    J'accepte que mes donnees personnelles soient utilisees pour traiter ma demande, conformement a la <a href="mentions-legales.html" target="_blank" style="color:#e386d7;">politique de confidentialite</a> de Funny Creche.
+                                                <label class="form-check-label form-rgpd-label" for="rgpd">
+                                                    J'accepte que mes donnees personnelles soient utilisees pour traiter ma demande, conformement a la <a href="mentions-legales.html" target="_blank" class="link-pink">politique de confidentialite</a> de Funny Creche.
                                                 </label>
                                             </div>
                                         </div>
