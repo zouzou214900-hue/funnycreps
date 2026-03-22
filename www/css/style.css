@@ -6799,10 +6799,10 @@ footer {
 	margin-top: 50px;
 }
 .banner-contact .carousel-caption {
-	left: 5%;
-	right: 5%;
+	padding-bottom: 40px;
 }
 .banner-contact .banner-slider-inner {
+	display: block;
 	width: 100%;
 	max-width: 100%;
 }
