@@ -42,7 +42,7 @@ $ldJson = array(
 
 <!-- Banner start -->
 <div class="banner banner-creche" id="banner">
-    <div id="bannerCarousole">
+    <div id="bannerCarousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
                 <img class="d-block w-100 h-100"

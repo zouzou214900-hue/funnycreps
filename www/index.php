@@ -109,7 +109,7 @@ $canonicalUrl = $baseUrl . '/' . ($mode === 'home' ? '' : $mode . '.html');
                         <a class="nav-link" href="contact.html">Contactez-nous</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-theme" style="margin-top:22px;" href="recrutement.html">Nous recrutons !</a>
+                        <a class="btn btn-theme navbar-btn-top" href="recrutement.html">Nous recrutons !</a>
                     </li>
                 </ul>
             </div>
@@ -133,8 +133,8 @@ if ($crecheData !== null) {
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-item clearfix">
                     <img src="img/logo_blanc.png" alt="Logo Funny Crèche" class="f-logo">
-                    <div class="text-center" style="color:#FFF;">
-                        Retrouvez nous sur <a style="color:#FFF;" href="https://www.facebook.com/profile.php?id=100072368342434">Facebook <i class="fa fa-facebook-square"></i></a>
+                    <div class="text-center footer-social">
+                        Retrouvez nous sur <a class="footer-social-link" href="https://www.facebook.com/profile.php?id=100072368342434">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -153,19 +153,19 @@ if ($crecheData !== null) {
                 <div class="footer-item">
                     <h4>Nos crèches</h4>
                     <ul class="links">
-                        <li><a href="creche-dijon.html"><i class="flaticon-pin"></i> DIJON - Eiffel</a></li>
-                        <li><a href="creche-dijon-cazotte.html"><i class="flaticon-pin"></i> DIJON - Cazotte</a></li>
-                        <li><a href="creche-plombiere.html"><i class="flaticon-pin"></i> PLOMBIÈRES-LÈS-DIJON</a></li>
-                        <li><a href="creche-varois.html"><i class="flaticon-pin"></i> VAROIS-ET-CHAIGNOT</a></li>
-                        <li><a href="creche-nuits.html"><i class="flaticon-pin"></i> NUITS-SAINT-GEORGES</a></li>
-                        <li><a href="creche-beaune-tonneliers.html"><i class="flaticon-pin"></i> BEAUNE - Tonneliers</a></li>
-                        <li><a href="creche-beaune-verdun.html"><i class="flaticon-pin"></i> BEAUNE - Verdun</a></li>
-                        <li><a href="creche-demigny.html"><i class="flaticon-pin"></i> DEMIGNY</a></li>
-                        <li><a href="creche-saint-loup.html"><i class="flaticon-pin"></i> SAINT-LOUP-GÉANGES</a></li>
-                        <li><a href="creche-neuilly-sur-marne.html"><i class="flaticon-pin"></i> NEUILLY-SUR-MARNE</a></li>
-                        <li><a href="creche-noisy-le-grand.html"><i class="flaticon-pin"></i> NOISY-LE-GRAND</a></li>
-                        <li><a href="creche-mont.html"><i class="flaticon-pin"></i> MONT-DE-MARSAN</a></li>
-                        <li><a href="ouvertures-prochaines.html"><i class="flaticon-calendar"></i> Prochaines ouvertures</a></li>
+                        <li><a href="creche-dijon.html"><i class="flaticon-pin" aria-hidden="true"></i> DIJON - Eiffel</a></li>
+                        <li><a href="creche-dijon-cazotte.html"><i class="flaticon-pin" aria-hidden="true"></i> DIJON - Cazotte</a></li>
+                        <li><a href="creche-plombiere.html"><i class="flaticon-pin" aria-hidden="true"></i> PLOMBIÈRES-LÈS-DIJON</a></li>
+                        <li><a href="creche-varois.html"><i class="flaticon-pin" aria-hidden="true"></i> VAROIS-ET-CHAIGNOT</a></li>
+                        <li><a href="creche-nuits.html"><i class="flaticon-pin" aria-hidden="true"></i> NUITS-SAINT-GEORGES</a></li>
+                        <li><a href="creche-beaune-tonneliers.html"><i class="flaticon-pin" aria-hidden="true"></i> BEAUNE - Tonneliers</a></li>
+                        <li><a href="creche-beaune-verdun.html"><i class="flaticon-pin" aria-hidden="true"></i> BEAUNE - Verdun</a></li>
+                        <li><a href="creche-demigny.html"><i class="flaticon-pin" aria-hidden="true"></i> DEMIGNY</a></li>
+                        <li><a href="creche-saint-loup.html"><i class="flaticon-pin" aria-hidden="true"></i> SAINT-LOUP-GÉANGES</a></li>
+                        <li><a href="creche-neuilly-sur-marne.html"><i class="flaticon-pin" aria-hidden="true"></i> NEUILLY-SUR-MARNE</a></li>
+                        <li><a href="creche-noisy-le-grand.html"><i class="flaticon-pin" aria-hidden="true"></i> NOISY-LE-GRAND</a></li>
+                        <li><a href="creche-mont.html"><i class="flaticon-pin" aria-hidden="true"></i> MONT-DE-MARSAN</a></li>
+                        <li><a href="ouvertures-prochaines.html"><i class="flaticon-calendar" aria-hidden="true"></i> Prochaines ouvertures</a></li>
                     </ul>
                 </div>
             </div>
@@ -174,25 +174,25 @@ if ($crecheData !== null) {
 </footer>
 <!-- Footer end -->
 
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-submenu.js"></script>
-<script src="js/rangeslider.js"></script>
-<script src="js/jquery.mb.YTPlayer.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.scrollUp.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/leaflet.js"></script>
-<script src="js/leaflet-providers.js"></script>
-<script src="js/leaflet.markercluster.js"></script>
-<script src="js/dropzone.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.filterizr.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.countdown.js"></script>
-<script src="js/maps.js"></script>
-<script src="js/app.js"></script>
+<script defer src="js/jquery-2.2.0.min.js"></script>
+<script defer src="js/popper.min.js"></script>
+<script defer src="js/bootstrap.min.js"></script>
+<script defer src="js/bootstrap-submenu.js"></script>
+<script defer src="js/rangeslider.js"></script>
+<script defer src="js/jquery.mb.YTPlayer.js"></script>
+<script defer src="js/bootstrap-select.min.js"></script>
+<script defer src="js/jquery.easing.1.3.js"></script>
+<script defer src="js/jquery.scrollUp.js"></script>
+<script defer src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script defer src="js/leaflet.js"></script>
+<script defer src="js/leaflet-providers.js"></script>
+<script defer src="js/leaflet.markercluster.js"></script>
+<script defer src="js/dropzone.js"></script>
+<script defer src="js/slick.min.js"></script>
+<script defer src="js/jquery.filterizr.js"></script>
+<script defer src="js/jquery.magnific-popup.min.js"></script>
+<script defer src="js/jquery.countdown.js"></script>
+<script defer src="js/maps.js"></script>
+<script defer src="js/app.js"></script>
 </body>
 </html>

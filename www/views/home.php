@@ -1,7 +1,7 @@
 
 <!-- Banner start -->
 <div class="banner banner" id="banner">
-    <div id="bannerCarousole" >
+    <div id="bannerCarousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
                 <img class="d-block w-100 h-100" src="img/home.jpg" alt="Bienvenue chez Funny Crèche - micro-crèches privées en France">
@@ -26,32 +26,11 @@
 </div>
 <!-- Banner end -->
 
-<!-- Services start 
-<div class="services content-area">
-    <div class="container"> 
-        <div class="main-title text-center">
-            <h1>Notre prochaine ouverture à Nuits-saint-Georges</h1>
-            <p>
-    <a href="contact.html" style="text-decoration: none; color: inherit;">
-        Pensez à pré-inscrire vos enfants !
-    </a>
-</p>
-<br/>
-<a href="contact.html">
-    <img src="img/flyer-nuits.png" style="width:50%;border:1px solid #CCC;"/>
-</a>
-        </div> 
-    </div>
-</div>-->
-<!-- Counters end -->
 
 <!-- Featured Properties start -->
 
         <!-- Main title -->
-        <br>
-        <br>
-        <br>
-        <br> 
+        <div class="section-spacer"></div>
         <div class="main-title">
             <h1>Que se passe-t-il dans la journée de votre enfant ?</h1>
         </div>
@@ -295,7 +274,7 @@
                     <i class="lnr lnr-map-marker"></i>
                     <h1 class="counter">12</h1>
                     <p>structures sur la france<br/>
-                       <i style='font-size:10px;'>suivez nos futures ouvertures sur Facebook</i></p>
+                       <i class="counter-note">suivez nos futures ouvertures sur Facebook</i></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -318,129 +297,4 @@
 
 
 
-<!--
-<div class="blog content-area-3">
-    <div class="container">
-
-        <div class="main-title">
-            <h1>L'actu UBO Immo</h1>
-            <p>Consultez nos derniers articles</p>
-        </div>
-
-        <div class="slick-slider-area">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
-                <div class="slick-slide-item">
-                    <div class="blog-3">
-                        <div class="blog-photo">
-                            <img src="http://placehold.it/350x218" alt="blog" class="img-fluid">
-                            <div class="date-box">
-                                <span>27</span>Feb
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h3>
-                                <a href="blog-single-sidebar-right.html">Find Your Dream Real Estate</a>
-                            </h3>
-                            <div class="post-meta">
-                                <span><a href="#"><i class="flaticon-people"></i>Amdin</a></span>
-                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
-                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="blog-3">
-                        <div class="blog-photo">
-                            <img src="http://placehold.it/350x218" alt="blog" class="img-fluid">
-                            <div class="date-box">
-                                <span>27</span>Feb
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h3>
-                                <a href="blog-single-sidebar-right.html">Selling Your Real House</a>
-                            </h3>
-                            <div class="post-meta">
-                                <span><a href="#"><i class="flaticon-people"></i>Amdin</a></span>
-                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
-                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="blog-3">
-                        <div class="blog-photo">
-                            <img src="http://placehold.it/350x218" alt="blog" class="img-fluid">
-                            <div class="date-box">
-                                <span>27</span>Feb
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h3>
-                                <a href="blog-single-sidebar-right.html">Buying a Best House</a>
-                            </h3>
-                            <div class="post-meta">
-                                <span><a href="#"><i class="flaticon-people"></i>Amdin</a></span>
-                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
-                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slick-slide-item">
-                    <div class="blog-3">
-                        <div class="blog-photo">
-                            <img src="http://placehold.it/350x218" alt="blog" class="img-fluid">
-                            <div class="date-box">
-                                <span>27</span>Feb
-                            </div>
-                        </div>
-                        <div class="detail">
-                            <h3>
-                                <a href="blog-single-sidebar-right.html">Buying a Best House</a>
-                            </h3>
-                            <div class="post-meta">
-                                <span><a href="#"><i class="flaticon-people"></i>Amdin</a></span>
-                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
-                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
-                            </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slick-prev slick-arrow-buton">
-                <i class="fa fa-angle-left"></i>
-            </div>
-            <div class="slick-next slick-arrow-buton">
-                <i class="fa fa-angle-right"></i>
-            </div>
-        </div>
-    </div>
-</div>
-Blog end -->
-
-<!--
-<div class="partners">
-    <div class="container">
-        <div class="slick-slider-area">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 5, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 3}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}'>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-                <div class="slick-slide-item"><img src="http://placehold.it/160x80" alt="brand" class="img-fluid"></div>
-            </div>
-        </div>
-    </div>
-</div>
-Partners end -->
 </div>

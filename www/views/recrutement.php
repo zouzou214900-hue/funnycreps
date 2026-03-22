@@ -1,40 +1,90 @@
+<?php
+require 'phpmailer/src/Exception.php';
+require 'phpmailer/src/PHPMailer.php';
+require 'phpmailer/src/SMTP.php';
 
-<?php 
-if($_POST) {
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $errors = [];
+$message = '';
+$errors  = [];
 
-    // AJOUT : Validation RGPD
+if ($_POST) {
+    // Validation CSRF
+    if (!isset($_POST['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+        $errors[] = "Requête invalide. Veuillez réessayer.";
+    }
+
+    // Validation RGPD
     if (!isset($_POST['rgpd'])) {
         $errors[] = "Vous devez accepter la politique de confidentialité pour envoyer votre demande.";
     }
 
-    if (count($errors) < 1) {
-        foreach($_POST as $cle => $val) {
-            if($cle == 'rgpd') continue; // Ne pas inclure la case RGPD dans le mail
-            $cle = str_replace("_"," ",$cle);
-            $cle = ucfirst($cle);
-            $body .= "<strong>$cle</strong> : $val<br/>";
+    // Validation email
+    $emailCandidat = isset($_POST['email']) ? trim($_POST['email']) : '';
+    if (empty($emailCandidat) || !filter_var($emailCandidat, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "L'adresse e-mail saisie n'est pas valide.";
+    }
+
+    if (count($errors) === 0) {
+        $nomPrenom  = htmlspecialchars(trim($_POST['nom_prenom']   ?? ''), ENT_QUOTES, 'UTF-8');
+        $telephone  = htmlspecialchars(trim($_POST['telephone']    ?? ''), ENT_QUOTES, 'UTF-8');
+        $structure  = htmlspecialchars(trim($_POST['structure']    ?? ''), ENT_QUOTES, 'UTF-8');
+        $typeEmploi = htmlspecialchars(trim($_POST['type_emploi']  ?? ''), ENT_QUOTES, 'UTF-8');
+        $corps      = htmlspecialchars(trim($_POST['message']      ?? ''), ENT_QUOTES, 'UTF-8');
+        $emailHtml  = htmlspecialchars($emailCandidat, ENT_QUOTES, 'UTF-8');
+
+        $body  = '<div style="font-family: Arial, sans-serif; color: #333;">';
+        $body .= '<h2 style="color: #E91E63;">Candidature reçue via le site Funny Crèche</h2>';
+        $body .= '<p><strong>Nom et prénom :</strong> ' . $nomPrenom . '</p>';
+        $body .= '<p><strong>E-mail :</strong> ' . $emailHtml . '</p>';
+        $body .= '<p><strong>Téléphone :</strong> ' . $telephone . '</p>';
+        $body .= '<p><strong>Structure souhaitée :</strong> ' . $structure . '</p>';
+        $body .= '<p><strong>Type de poste :</strong> ' . $typeEmploi . '</p>';
+        $body .= '<p><strong>Message :</strong><br/>' . nl2br($corps) . '</p>';
+        $body .= '</div>';
+
+        try {
+            $mail = new PHPMailer(true);
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = isset($_ENV['SMTP_USER']) ? $_ENV['SMTP_USER'] : '';
+            $mail->Password   = isset($_ENV['SMTP_PASS']) ? $_ENV['SMTP_PASS'] : '';
+            $mail->SMTPSecure = 'tls';
+            $mail->Port       = 587;
+            $mail->CharSet    = 'UTF-8';
+
+            $mail->setFrom('medias@funny-creche.fr', 'Recrutement via www.Funny-Creche.fr');
+            $mail->addAddress('n.michaud@funny-creche.fr');
+            $mail->addAddress('c.chavet@funny-creche.fr');
+            $mail->addReplyTo($emailCandidat, $nomPrenom);
+
+            $mail->isHTML(true);
+            $mail->Subject = 'Candidature ' . $typeEmploi . ' — ' . $structure;
+            $mail->Body    = $body;
+
+            $mail->send();
+
+            $message = "<div class='col-md-6 offset-lg-3 alert alert-success alert-dismissible fade show' role='alert'>
+                <strong>Votre candidature a bien été envoyée.</strong><br/> Nous vous recontacterons dans les meilleurs délais.
+                <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
+                  <span aria-hidden='true'>&times;</span>
+                </button>
+              </div>";
+
+        } catch (Exception $e) {
+            $message = "<div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'>
+                Une erreur est survenue lors de l'envoi. Veuillez réessayer ou nous contacter directement par téléphone.
+                <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
+                  <span aria-hidden='true'>&times;</span>
+                </button>
+              </div>";
         }
-
-        $headers[] = 'MIME-Version: 1.0';
-        $headers[] = 'Content-type: text/html; charset=utf-8';
-        $headers[] = 'From: '.$_POST["email"];
-        $headers[] = 'Reply-To: '.$_POST["email"];
-
-        $mailer = mail("n.michaud@funny-creche.fr, c.chavet@funny-creche.fr", "Demande de recrutement depuis le site Funny crèche", $body, implode("\r\n", $headers));
-
-        $message = "<div class='col-md-6 offset-lg-3 alert alert-success alert-dismissible fade show' role='alert'>
-            <strong style='color:#000'>Votre demande a bien été prise en compte.</strong><br/> Vous serez recontacté dans les meilleurs délais.
-            <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
-              <span aria-hidden='true'>&times;</span>
-            </button>
-          </div>";
     } else {
-        $message = "<div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'>
-            <ul>";
-        foreach($errors as $error) {
-            $message .= "<li>" . $error . "</li>";
+        $message  = "<div class='col-md-6 offset-lg-3 alert alert-danger alert-dismissible fade show' role='alert'><ul>";
+        foreach ($errors as $error) {
+            $message .= "<li>" . htmlspecialchars($error, ENT_QUOTES, 'UTF-8') . "</li>";
         }
         $message .= "</ul>
             <button type='button' class='close' data-dismiss='alert' aria-label='Fermer'>
@@ -42,14 +92,11 @@ if($_POST) {
             </button>
           </div>";
     }
-
-} else {
-    $message = '';
 }
 ?>
 <!-- Banner start -->
 <div class="banner banner-contact" id="banner" style="margin-top:50px;">
-    <div id="bannerCarousole">
+    <div id="bannerCarousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">
                 <img class="d-block w-100 h-100" src="img/recrutement.jpg" alt="Rejoignez l'équipe Funny Crèche - offres de recrutement">
@@ -69,6 +116,7 @@ if($_POST) {
                         </div>
 
                         <form action="recrutement.html" method="POST">
+                            <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token'], ENT_QUOTES, 'UTF-8'); ?>">
                             <?php echo $message; ?>
                             <div class="row">
                                 <div class="col-lg-12">
@@ -128,12 +176,11 @@ if($_POST) {
                                                 <textarea required class="form-control" name="message" rows='5' placeholder="Votre message"></textarea>
                                             </div>
                                         </div>
-                                        <!-- AJOUT : Case RGPD -->
-                                        <div class="col-md-12" style="margin-bottom: 15px; text-align: left;">
+                                        <div class="col-md-12 form-rgpd">
                                             <div class="form-check">
                                                 <input type="checkbox" required name="rgpd" id="rgpd" class="form-check-input">
-                                                <label class="form-check-label" for="rgpd" style="font-size:13px; color:#FFF;">
-                                                    J'accepte que mes données personnelles soient utilisées pour traiter ma candidature, conformément à la <a href="mentions-legales.html" target="_blank" style="color:#e386d7;">politique de confidentialité</a> de Funny Crèche.
+                                                <label class="form-check-label form-rgpd-label" for="rgpd">
+                                                    J'accepte que mes données personnelles soient utilisées pour traiter ma candidature, conformément à la <a href="mentions-legales.html" target="_blank" class="link-pink">politique de confidentialité</a> de Funny Crèche.
                                                 </label>
                                             </div>
                                         </div>

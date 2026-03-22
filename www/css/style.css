@@ -6935,4 +6935,112 @@ footer {
 @media only screen and (max-width:480px){.main-timeline2 .title{font-size:18px}
 }
 
+/* =====================================================
+   Funny Crèche — classes utilitaires
+   ===================================================== */
 
+/* Espacement de section (remplace les <br> de mise en page) */
+.section-spacer { height: 60px; }
+
+/* Petite note dans le compteur */
+.counter-note { font-size: 10px; }
+
+/* Lien rose (utilisé dans creches.php et recrutement.php) */
+.link-pink { color: #e386d7; }
+
+/* Bouton navbar recrutement */
+.navbar-btn-top { margin-top: 22px; }
+
+/* Footer social */
+.footer-social { color: #FFF; }
+.footer-social-link { color: #FFF; }
+
+/* Carte de crèche dans la page listing */
+.creche-card-pad { padding: 30px; }
+
+/* Iframe Google Maps dans la page listing */
+.creche-map {
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+    background: pink;
+}
+
+/* Formulaire RGPD (recrutement) */
+.form-rgpd { margin-bottom: 15px; text-align: left; }
+.form-rgpd-label { font-size: 13px; color: #FFF; }
+
+/* =====================================================
+   Page ouvertures-prochaines — timeline verticale
+   ===================================================== */
+#timeline-content {
+    margin-top: 50px;
+    text-align: center;
+}
+ul.timeline {
+    border-left: 4px solid #e386d7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Chivo', sans-serif;
+    margin: 50px auto;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: center;
+    font-weight: 100;
+    max-width: 60%;
+}
+ul.timeline h1 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 100; font-size: 1.4em; }
+ul.timeline h2,
+ul.timeline h3 { font-family: 'Saira', sans-serif; letter-spacing: 1.5px; font-weight: 400; font-size: 1.4em; }
+ul.timeline .event { border-bottom: 1px dashed rgba(255, 255, 255, 0.1); padding-bottom: 25px; margin-bottom: 50px; position: relative; }
+ul.timeline .event:last-of-type { padding-bottom: 0; margin-bottom: 0; border: none; }
+ul.timeline .event:before,
+ul.timeline .event:after { position: absolute; display: block; top: 0; }
+ul.timeline .event:before {
+    left: -217.5px;
+    color: #000;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'Saira', sans-serif;
+}
+ul.timeline .event:after {
+    box-shadow: 0 0 0 4px #e386d7;
+    left: -57.85px;
+    background: #313534;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
+
+/* =====================================================
+   Page mentions-légales
+   ===================================================== */
+.ml-container { max-width: 900px; margin: 60px auto; padding: 0 20px 60px; }
+.ml-header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #E91E63; }
+.ml-header h1 { color: #E91E63; font-size: 28px; margin-bottom: 8px; }
+.ml-header p { color: #777; font-size: 14px; }
+.ml-container h2 { color: #E91E63; font-size: 18px; margin-top: 40px; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid #f0c0d8; }
+.ml-container h3 { font-size: 15px; color: #555; margin-top: 20px; margin-bottom: 8px; }
+.ml-container p,
+.ml-container li { font-size: 14px; line-height: 1.8; color: #444; }
+.ml-container ul { padding-left: 20px; }
+.ml-container table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+.ml-container table th { background: #f9e8f3; color: #c0185a; padding: 10px 12px; text-align: left; font-weight: 600; }
+.ml-container table td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+.ml-container table tr:nth-child(even) td { background: #fafafa; }
+.ml-info-box { background: #f9f0f5; border-left: 4px solid #E91E63; padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+.ml-info-box strong { color: #c0185a; }
+.ml-updated { font-size: 12px; color: #999; text-align: right; margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; }
+.ml-back-btn { display: inline-block; margin-top: 40px; padding: 10px 24px; background: #E91E63; color: #fff !important; border-radius: 6px; text-decoration: none; font-size: 14px; }
+.ml-back-btn:hover { background: #c0185a; }
