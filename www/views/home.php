@@ -142,9 +142,7 @@
                     <div class="category_bg_box category_long_bg cat-4-bg">
                         <div class="category-overlay">
                             <div class="category-content">
-                                <h3 class="category-title">
-                                    <a href="#">Favoriser l’éveil </a>
-                                </h3>
+                                <h3 class="category-title">Favoriser l’éveil</h3>
                                   <p class="category-desc">Des enfants par le jeu</p>
                             </div>
                         </div>
@@ -158,9 +156,7 @@
                             <div class="category_bg_box cat-1-bg">
                                 <div class="category-overlay">
                                     <div class="category-content">
-                                        <h3 class="category-title">
-                                            <a href="properties-list-rightside.html">Participer à l’installation </a>
-                                        </h3>
+                                        <h3 class="category-title">Participer à l’installation</h3>
                                           <p class="category-desc">D'une bonne estime de soi</p>
                                     </div>
                                 </div>
@@ -172,9 +168,7 @@
                             <div class="category_bg_box cat-2-bg">
                                 <div class="category-overlay">
                                     <div class="category-content">
-                                        <h3 class="category-title">
-                                            <a href="#">Développer la curiosité</a>
-                                        </h3>
+                                        <h3 class="category-title">Développer la curiosité</h3>
                                         <p class="category-desc">de l’enfant par l’éveil musical</p>
                                     </div>
                                 </div>
@@ -186,9 +180,7 @@
                             <div class="category_bg_box cat-3-bg">
                                 <div class="category-overlay">
                                     <div class="category-content">
-                                        <h3 class="category-title">
-                                            <a href="#">Accompagner les enfants </a>
-                                        </h3>
+                                        <h3 class="category-title">Accompagner les enfants</h3>
                                         <p class="category-desc">Dans leurs besoins quotidiens par le respect du rythme de chacun</p>
                                     </div>
                                 </div>
@@ -200,9 +192,7 @@
                             <div class="category_bg_box cat-5-bg">
                                 <div class="category-overlay">
                                     <div class="category-content">
-                                        <h3 class="category-title">
-                                            <a href="#">Proposer un éveil linguistique</a>
-                                        </h3>
+                                        <h3 class="category-title">Proposer un éveil linguistique</h3>
                                           <p class="category-desc">Par des ateliers d’initiation à l’anglais<br/> et à l’espagnol</p>
                                     </div>
                                 </div>
