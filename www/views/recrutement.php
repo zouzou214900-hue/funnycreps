@@ -95,7 +95,7 @@ if ($_POST) {
 }
 ?>
 <!-- Banner start -->
-<div class="banner banner-contact" id="banner" style="margin-top:50px;">
+<div class="banner banner-contact" id="banner">
     <div id="bannerCarousel">
         <div class="carousel-inner">
             <div class="carousel-item banner-max-height active">

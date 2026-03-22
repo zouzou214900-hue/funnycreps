@@ -6176,6 +6176,25 @@ footer {
 	#banner.banner-contact img {
 		min-height: 800px !important;
 	}
+	.banner-contact {
+		margin-top: 50px;
+	}
+	.upcoming-label {
+		font-size: 14px;
+		color: #E91E63;
+	}
+	.upcoming-badge {
+		display: inline-block;
+		background: #fff0f8;
+		border: 2px dashed #E91E63;
+		border-radius: 10px;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+	}
+	.pricing-disclaimer {
+		padding: 10px;
+		text-align: justify;
+	}
 	.list_maps .col-pad {
 		border-bottom: 2px solid #EFEFEF;
 		margin-bottom: 20px;

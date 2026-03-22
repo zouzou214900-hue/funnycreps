@@ -114,7 +114,7 @@ $ldJson = array(
                             <?php echo htmlspecialchars($c['pricing_adhesion'], ENT_QUOTES, 'UTF-8'); ?><sup>€</sup><span>/an</span>
                         </div>
                         <br/><br/>
-                        <h6 style="color:#e386d7">
+                        <h6 class="colorpink">
                             <i class="fa fa-info-circle"></i> Aide de la CAF et crédit d'impôt
                         </h6>
                     </div>
@@ -132,7 +132,7 @@ $ldJson = array(
                         </ul>
                     </div>
                 </div>
-                <p style="padding:10px;text-align:justify;">
+                <p class="pricing-disclaimer">
                     * Déduction fiscale limitée à 3&nbsp;500&nbsp;€ par enfant gardé donnant droit à un avantage fiscal
                     plafonné à 1&nbsp;750&nbsp;€ par enfant (environ 145&nbsp;€/mois).
                 </p>
