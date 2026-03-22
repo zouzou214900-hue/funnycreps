@@ -168,8 +168,8 @@
 	function scrollTo(hash) {
     location.hash = "#" + hash;
 }
-   <?php if(isset($_GET['anchor']) && $_GET['anchor']!=='') {
-	   echo  'scrollTo("'.$_GET['anchor'].'");';
+   <?php if (isset($_GET['anchor']) && $_GET['anchor'] !== '') {
+       echo 'scrollTo("' . htmlspecialchars($_GET['anchor'], ENT_QUOTES, 'UTF-8') . '");';
    }
    ?>
 </script>

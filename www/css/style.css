@@ -6948,6 +6948,9 @@ footer {
 /* Lien rose (utilisé dans creches.php et recrutement.php) */
 .link-pink { color: #e386d7; }
 
+/* Texte description dans les blocs catégories (home.php) */
+.category-desc { color: #FFF; text-align: left; }
+
 /* Bouton navbar recrutement */
 .navbar-btn-top { margin-top: 22px; }
 
@@ -6963,7 +6966,7 @@ footer {
     border-radius: 10px;
     border: 0;
     padding: 5px;
-    background: pink;
+    background: #f9f0f5;
 }
 
 /* Formulaire RGPD (recrutement) */

@@ -145,7 +145,7 @@
                                 <h3 class="category-title">
                                     <a href="#">Favoriser l’éveil </a>
                                 </h3>
-                                  <p style="color:#FFF;text-align: left;">Des enfants par le jeu</p>
+                                  <p class="category-desc">Des enfants par le jeu</p>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                                         <h3 class="category-title">
                                             <a href="properties-list-rightside.html">Participer à l’installation </a>
                                         </h3>
-                                          <p style="color:#FFF;text-align: left;">D'une bonne estime de soi</p>
+                                          <p class="category-desc">D'une bonne estime de soi</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@
                                         <h3 class="category-title">
                                             <a href="#">Développer la curiosité</a>
                                         </h3>
-                                        <p style="color:#FFF;text-align: left;">de l’enfant par l’éveil musical</p>
+                                        <p class="category-desc">de l’enfant par l’éveil musical</p>
                                     </div>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                         <h3 class="category-title">
                                             <a href="#">Accompagner les enfants </a>
                                         </h3>
-                                        <p style="color:#FFF;text-align: left;">Dans leurs besoins quotidiens par le respect du rythme de chacun</p>
+                                        <p class="category-desc">Dans leurs besoins quotidiens par le respect du rythme de chacun</p>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +203,7 @@
                                         <h3 class="category-title">
                                             <a href="#">Proposer un éveil linguistique</a>
                                         </h3>
-                                          <p style="color:#FFF;text-align: left;">Par des ateliers d’initiation à l’anglais<br/> et à l’espagnol</p>
+                                          <p class="category-desc">Par des ateliers d’initiation à l’anglais<br/> et à l’espagnol</p>
                                     </div>
                                 </div>
                             </div>
