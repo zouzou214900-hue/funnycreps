@@ -10,7 +10,7 @@
                         <div class="text-center">
                             <h1>Bienvenue sur Funny Crèche</h1>
                             <p>
-							Des micro-crèches privées présentes en Côte d or, Saône et Loire, Seine-Saint-Denis et les Landes.
+							Des micro-crèches privées présentes en Côte-d'Or, Saône-et-Loire, Seine-Saint-Denis et les Landes.
 							<br/>
 							Pensée comme un véritable cocon pour les tout-petits comme pour les plus grands, notre micro-crèche vous propose un accueil collectif régulier ou ponctuel, pour vos enfants jusqu’à leur entrée en maternelle. Notre capacité d’accueil est de 10 places.
                             </p>
@@ -40,7 +40,7 @@
                 <div class="col-md-12">
                     <div class="main-timeline2">
                         <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/summer.png" alt="Icône soleil - arrivée à la crèche"></span>
+                            <span class="icon"><img loading="lazy" src="https://img.icons8.com/dotty/50/3ebae7/summer.png" alt="Icône soleil - arrivée à la crèche"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> 8h à 9h30 : Arrivée à la crèche</h3>
                                 <p class="description">
@@ -52,7 +52,7 @@
                             </a>
                         </div>
                         <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/E386D7/vegetarian-food.png" alt="Icône nourriture - goûter du matin"></span>
+                            <span class="icon"><img loading="lazy" src="https://img.icons8.com/dotty/50/E386D7/vegetarian-food.png" alt="Icône nourriture - goûter du matin"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title">9h30 à 10h : Un verre d’eau, de jus de fruits frais </h3>
 								<p class="description">
@@ -62,7 +62,7 @@
 
                         </div>
 						 <div class="timeline">
-                            <span class="icon"><img src="https://img.icons8.com/dotty/50/3ebae7/puzzle.png" alt="Icône puzzle - activités du matin"></span>
+                            <span class="icon"><img loading="lazy" src="https://img.icons8.com/dotty/50/3ebae7/puzzle.png" alt="Icône puzzle - activités du matin"></span>
                             <a href="#" class="timeline-content">
                                 <h3 class="title"> Activités du matin</h3>
                                 <p class="description">

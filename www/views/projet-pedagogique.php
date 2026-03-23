@@ -87,9 +87,9 @@
       Notre équipe est à votre disposition pour vous expliquer  plus en détail notre <strong>projet pédagogique</strong> et partager avec vous nos <strong>valeurs</strong> et nos <strong>convictions</strong>. Un exemplaire vous sera remis après la validation définitive de l'inscription de votre enfant.
     </p>
 	<div class='text-center'  id="micro-creche">
-    <a href="contact.php?rdv">
+    <a href="contact.html">
       <div class="btn btn-lg btn-theme" >
-        <i class="fa fa-child"></i> Inscrire mon Enfant
+        <i class="fa fa-child" aria-hidden="true"></i> Inscrire mon Enfant
       </div>
     </a>
 	</div>

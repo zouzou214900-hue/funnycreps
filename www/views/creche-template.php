@@ -55,17 +55,17 @@ $ldJson = array(
                             <p><?php echo htmlspecialchars($c['banner_address'], ENT_QUOTES, 'UTF-8'); ?></p>
                             <a href="tel:<?php echo htmlspecialchars($c['banner_phone_href'], ENT_QUOTES, 'UTF-8'); ?>"
                                class="btn btn-lg btn-white-lg-outline">
-                                <i class="fa fa-phone"></i>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
                                 <?php echo htmlspecialchars($c['banner_phone_text'], ENT_QUOTES, 'UTF-8'); ?>
                             </a>
                             <a href="mailto:<?php echo $email; ?>?Subject=Demande%20d%27informations"
                                class="btn btn-lg btn-white-lg-outline">
-                                <i class="fa fa-envelope"></i> <?php echo $email; ?>
+                                <i class="fa fa-envelope" aria-hidden="true"></i> <?php echo $email; ?>
                             </a>
                             <br/><br/>
                             <a href="contact.html?s=<?php echo $email; ?>"
                                class="btn btn-lg btn-theme">
-                                <i class="fa fa-sign-in"></i> Inscrire votre enfant
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Inscrire votre enfant
                             </a>
                         </div>
                     </div>
@@ -115,18 +115,18 @@ $ldJson = array(
                         </div>
                         <br/><br/>
                         <h6 class="colorpink">
-                            <i class="fa fa-info-circle"></i> Aide de la CAF et crédit d'impôt
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> Aide de la CAF et crédit d'impôt
                         </h6>
                     </div>
                     <div class="plan-list">
                         <ul>
-                            <li><i class="fa fa-globe"></i>Nombre de jours : <?php echo htmlspecialchars($c['pricing_jours'], ENT_QUOTES, 'UTF-8'); ?></li>
-                            <li><i class="fa fa-thumbs-up"></i>Nombre d'heures : <?php echo htmlspecialchars($c['pricing_heures'], ENT_QUOTES, 'UTF-8'); ?></li>
-                            <li><i class="fa fa-signal"></i>Exemple tarif horaire : <?php echo htmlspecialchars($c['pricing_tarif'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
-                            <li><i class="flaticon-people"></i>Total hebdomadaire : <?php echo htmlspecialchars($c['pricing_hebdo'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
-                            <li><i class="fa fa-star"></i>Total mensuel : <?php echo $c['pricing_mensuel']; ?>&nbsp;€</li>
-                            <li><i class="fa fa-rocket"></i>Aide de la CAF* : <?php echo htmlspecialchars($c['pricing_caf'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
-                            <li><i class="fa fa-server"></i>Reste à charge : <?php echo htmlspecialchars($c['pricing_reste'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
+                            <li><i class="fa fa-globe" aria-hidden="true"></i>Nombre de jours : <?php echo htmlspecialchars($c['pricing_jours'], ENT_QUOTES, 'UTF-8'); ?></li>
+                            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i>Nombre d'heures : <?php echo htmlspecialchars($c['pricing_heures'], ENT_QUOTES, 'UTF-8'); ?></li>
+                            <li><i class="fa fa-signal" aria-hidden="true"></i>Exemple tarif horaire : <?php echo htmlspecialchars($c['pricing_tarif'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
+                            <li><i class="flaticon-people" aria-hidden="true"></i>Total hebdomadaire : <?php echo htmlspecialchars($c['pricing_hebdo'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i>Total mensuel : <?php echo $c['pricing_mensuel']; ?>&nbsp;€</li>
+                            <li><i class="fa fa-rocket" aria-hidden="true"></i>Aide de la CAF* : <?php echo htmlspecialchars($c['pricing_caf'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
+                            <li><i class="fa fa-server" aria-hidden="true"></i>Reste à charge : <?php echo htmlspecialchars($c['pricing_reste'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</li>
                             <li><strong>Reste à charge toutes aides déduites : <?php echo htmlspecialchars($c['pricing_reste_aides'], ENT_QUOTES, 'UTF-8'); ?>&nbsp;€</strong></li>
                             <li><em>* Tarif indicatif susceptible d'être révisé.</em></li>
                         </ul>
@@ -140,7 +140,7 @@ $ldJson = array(
                 <div class="plan-button text-center">
                     <a href="contact.html?s=<?php echo $email; ?>"
                        class="btn btn-outline pricing-btn">
-                        <i class="fa fa-sign-in"></i> Inscrire mon enfant
+                        <i class="fa fa-sign-in" aria-hidden="true"></i> Inscrire mon enfant
                     </a>
                 </div>
             </div>

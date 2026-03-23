@@ -6827,6 +6827,14 @@ footer {
 	text-align: justify;
 }
 
+/* Titres des catégories (section projet pédagogique, home) */
+.category-title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+
 /* Grille "micro-crèche en 3 points" (projet-pedagogique) */
 .micro-creche-points {
 	padding: 20px 0;
